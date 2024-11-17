@@ -1,0 +1,2 @@
+    inet 127.0.0.1/8 scope host lo
+    inet 93.183.73.102/24 brd 93.183.73.255 scope global noprefixroute enp0s5
