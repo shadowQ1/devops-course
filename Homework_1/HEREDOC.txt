@@ -1,0 +1,18 @@
+1. Выполнил задание с помощью команды: 
+ip addr show | grep inet > ip_address.txt
+2. Выполнил задание с помощью команд:
+mkfifo pipe
+ss -plnt > pipe &
+cat pipe > ss_pipeOutput.txt
+3. Выполнил задание с помощью команд:
+mkfifo pipe
+tar czf log_messages.tar.gz -C /var/log messages < pipe &
+cat /var/log/messages > pipe &
+4. Выполнил задание с помощью команд:
+echo "Дата в обычном формате и в формате unixtime:" > date_output.txt
+date "+%Y-%m-%d %H:%M:%S" | tee >> date_output.txt
+date "+%Y-%m-%d %H:%M:%S" | xargs -I {} date -d "{}" +%s >> date_output.txt
+5. Выполнил задание с помощью команды:
+cat <<EOF > HEREDOC.txt
+...
+EOF
